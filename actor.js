@@ -1,11 +1,12 @@
 class Actor {
-  constructor({ maxspeed, maxforce }) {
+  constructor({ maxspeed, maxforce, actorBehavior }) {
     this.position = createVector(windowWidth / 2, windowHeight / 2);
     this.velocity = createVector();
     this.acceleration = createVector();
 
     this.maxspeed = maxspeed;
     this.maxforce = maxforce;
+    this.actorBehavior = actorBehavior;
   }
 
   seek(target) {
@@ -46,20 +47,14 @@ class Actor {
   }
 
   update({ target }) {
-    this.arrive(target);
-    // const attractForce = destPositon.sub(this.position);
-
-    // attractForce.normalize();
-    // attractForce.mult(this.accelerationForce);
-
-    // console.log(attractForce);
-
-    // this.acceleration.add(attractForce);
+    if (this.actorBehavior == "seek") {
+      this.seek(target);
+    } else if (this.actorBehavior == "arrive") {
+      this.arrive(target);
+    }
 
     // BASIC PHYSICS
-    // Update velocity
     this.velocity.add(this.acceleration);
-    // Limit speed
     this.velocity.limit(this.maxspeed);
     this.position.add(this.velocity);
     // Reset accelerationelertion to 0 each cycle
