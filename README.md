@@ -6,4 +6,7 @@ To callibrate: look at individual red squares and click with mouse. Do this for 
 
 https://sparkling-mousse-999b84.netlify.app
 
-<img width="1282" alt="Screen Shot 2022-05-10 at 8 47 02 PM" src="https://user-images.githubusercontent.com/5685294/167710177-de55cfed-b7a3-46cc-958b-278a1a313bb8.png">
+
+https://user-images.githubusercontent.com/5685294/167711030-c00a3bcd-603e-4ec9-bac2-1507a9a30149.mp4
+
+
