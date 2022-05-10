@@ -114,6 +114,12 @@ function setup() {
 
   actorControls.open();
   webgazeControls.open();
+
+  // CALIBRATION NOTE
+  drawVisionTargets();
+  console.warn(
+    "To callibrate: look at individual red squares and click with mouse. Do this for all squares around the perimiter of the screen and the center one."
+  );
 }
 
 function drawVisionTargets() {
